@@ -233,9 +233,14 @@ class ImageSegmentationModelExecutor(
   companion object {
 
     public const val TAG = "SegmentationInterpreter"
-    private const val imageSegmentationModel = "deeplabv3_257_mv_gpu.tflite"
-    private const val imageSize = 257
-    const val NUM_CLASSES = 21
+    /*
+    * private const val imageSegmentationModel = "deeplabv3_257_mv_gpu.tflite"
+    * private const val imageSize = 257
+    * const val NUM_CLASSES = 21
+    */
+    private const val imageSegmentationModel = "mnv3_seg_float.tflite"
+    private const val imageSize = 256
+    const val NUM_CLASSES = 2
     private const val IMAGE_MEAN = 127.5f
     private const val IMAGE_STD = 127.5f
 
