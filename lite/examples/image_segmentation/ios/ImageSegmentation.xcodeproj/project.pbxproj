@@ -19,6 +19,8 @@
 		7F9738E323422B200058C202 /* deeplabv3_257_mv_gpu.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 7F9738E02340733F0058C202 /* deeplabv3_257_mv_gpu.tflite */; };
 		7F9738E72343CE9F0058C202 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9738E62343CE9F0058C202 /* UIKitExtension.swift */; };
 		7FA4B36F2345BC73005784A9 /* boy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FA4B36E2345BC73005784A9 /* boy.jpg */; };
+		D2C2EA442581AD5D00D68700 /* mnv3_seg_quant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D2C2EA422581AD5D00D68700 /* mnv3_seg_quant.tflite */; };
+		D2C2EA452581AD5D00D68700 /* mnv3_seg_float.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D2C2EA432581AD5D00D68700 /* mnv3_seg_float.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8857CE6BF260FD2EBF0CDB36 /* Pods-ImageSegmentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSegmentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSegmentation/Pods-ImageSegmentation.release.xcconfig"; sourceTree = "<group>"; };
 		AFA20F57D312CC344EAF47D5 /* Pods-ImageSegmentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSegmentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSegmentation/Pods-ImageSegmentation.debug.xcconfig"; sourceTree = "<group>"; };
 		D23CF8BF5D33ABF1A65D8568 /* Pods_ImageSegmentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageSegmentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C2EA422581AD5D00D68700 /* mnv3_seg_quant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mnv3_seg_quant.tflite; sourceTree = "<group>"; };
+		D2C2EA432581AD5D00D68700 /* mnv3_seg_float.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mnv3_seg_float.tflite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		7F9738E823448E750058C202 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D2C2EA432581AD5D00D68700 /* mnv3_seg_float.tflite */,
+				D2C2EA422581AD5D00D68700 /* mnv3_seg_quant.tflite */,
 				7F9738DE234072CE0058C202 /* deeplabv3_labels.json */,
 				7F9738E02340733F0058C202 /* deeplabv3_257_mv_gpu.tflite */,
 			);
@@ -174,7 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C2EA442581AD5D00D68700 /* mnv3_seg_quant.tflite in Resources */,
 				7FA4B36F2345BC73005784A9 /* boy.jpg in Resources */,
+				D2C2EA452581AD5D00D68700 /* mnv3_seg_float.tflite in Resources */,
 				7F67812B23405196002A02F2 /* LaunchScreen.storyboard in Resources */,
 				7F67812823405196002A02F2 /* Assets.xcassets in Resources */,
 				7F9738DF234072CE0058C202 /* deeplabv3_labels.json in Resources */,
@@ -383,9 +391,9 @@
 			baseConfigurationReference = AFA20F57D312CC344EAF47D5 /* Pods-ImageSegmentation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PNR9X9TVFG;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VNMJ4FJ2;
 				INFOPLIST_FILE = ImageSegmentation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.examples.ImageSegmentation;
 				PRODUCT_NAME = "TFL Segmentation";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,9 +413,9 @@
 			baseConfigurationReference = 8857CE6BF260FD2EBF0CDB36 /* Pods-ImageSegmentation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PNR9X9TVFG;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VNMJ4FJ2;
 				INFOPLIST_FILE = ImageSegmentation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,7 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.examples.ImageSegmentation;
 				PRODUCT_NAME = "TFL Segmentation";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

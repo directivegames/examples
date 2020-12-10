@@ -462,7 +462,9 @@ private enum Constants {
   static let labelsFileExtension = "json"
 
   /// The TF Lite segmentation model file
-  static let modelFileName = "deeplabv3_257_mv_gpu"
+  //static let modelFileName = "deeplabv3_257_mv_gpu"
+  static let modelFileName = "mnv3_seg_float"
+  //static let modelFileName = "mnv3_seg_quant"
   static let modelFileExtension = "tflite"
 
   /// List of colors to visualize segmentation result.
